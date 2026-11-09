@@ -29,10 +29,6 @@ resources:
             - task_key: notebook_task
           notebook_task:
             notebook_path: ../src/latest_sample_notebook.ipynb
-      tasks:
-        - task_key: notebook_task
-          notebook_task:
-            notebook_path: ../src/sample_notebook.ipynb
 
       environments:
         - environment_key: default
