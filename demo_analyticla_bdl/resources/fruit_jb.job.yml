@@ -8,8 +8,8 @@ resources:
           email_notifications: {}
           notebook_task:
             base_parameters:
-              catalog: dev_catl
-              schema: dev
+              catalog: ${var.catalog}
+              schema: ${var.schema}
               table: fruit_prices
             notebook_path: ../src/fruit_jb/prices.ipynb
             source: WORKSPACE
