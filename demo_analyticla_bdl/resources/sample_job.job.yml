@@ -28,7 +28,7 @@ resources:
           depends_on:
             - task_key: notebook_task
           notebook_task:
-            notebook_path: ../src/latest_sample_notebook
+            notebook_path: ../src/latest_sample_notebook.ipynb
       tasks:
         - task_key: notebook_task
           notebook_task:
