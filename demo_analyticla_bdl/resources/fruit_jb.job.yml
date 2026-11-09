@@ -1,0 +1,26 @@
+resources:
+  jobs:
+    fruit_jb:
+      name: fruit_jb
+      tasks:
+        - task_key: prices
+          disabled: false
+          email_notifications: {}
+          notebook_task:
+            base_parameters:
+              catalog: dev_catl
+              schema: dev
+              table: fruit_prices
+            notebook_path: ../src/fruit_jb/prices.ipynb
+            source: WORKSPACE
+          run_if: ALL_SUCCESS
+          timeout_seconds: 0
+          webhook_notifications: {}
+      email_notifications:
+        no_alert_for_skipped_runs: false
+      max_concurrent_runs: 1
+      performance_target: PERFORMANCE_OPTIMIZED
+      queue:
+        enabled: true
+      timeout_seconds: 0
+      webhook_notifications: {}
