@@ -8,9 +8,9 @@ resources:
           email_notifications: {}
           notebook_task:
             base_parameters:
-              catalog: dev_catl
-              schema: dev
-              table: fruit_prices
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+              table: ${var.table}
             notebook_path: ../src/fruit_jb/prices.ipynb
             source: WORKSPACE
           run_if: ALL_SUCCESS
