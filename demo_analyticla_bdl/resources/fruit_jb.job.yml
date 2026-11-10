@@ -10,7 +10,7 @@ resources:
             base_parameters:
               catalog: ${var.catalog}
               schema: ${var.schema}
-              table: fruit_prices
+              table: ${var.table}
             notebook_path: ../src/fruit_jb/prices.ipynb
             source: WORKSPACE
           run_if: ALL_SUCCESS
